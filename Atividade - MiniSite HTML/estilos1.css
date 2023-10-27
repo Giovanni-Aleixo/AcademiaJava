@@ -1,0 +1,44 @@
+/* styles.css */
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #0733c0; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    text-align: center; /* Alinhar o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilos para a barra de navegação */
+nav ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover preenchimento padrão */
+}
+
+nav li {
+    display: inline; /* Exibir itens de navegação em linha */
+    margin-right: 10px; /* Margem à direita para separar os itens */
+}
+
+nav a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #333; /* Cor dos links */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para a lista de atrações */
+main ul {
+    list-style: disc; /* Usar marcadores de lista como discos */
+    margin-left: 20px; /* Margem à esquerda para indentação */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #ca1010; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    text-align: center; /* Alinhar o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+}

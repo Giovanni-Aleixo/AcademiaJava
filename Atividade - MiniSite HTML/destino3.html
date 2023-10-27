@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dicas de Viagem - Brasil</title>
+    <link rel="stylesheet" type="text/css" href="estilos3.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dicas de Viagem - Brasil</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="destino1.html">França</a></li>
+            <li><a href="destino2.html">Japão</a></li>
+            <li><a href="destino3.html">Brasil</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Atrações no Rio de Janeiro</h2>
+        <ul>
+            <li>Explore as praias deslumbrantes de Copacabana e Ipanema no Rio de Janeiro</li>
+            <li>Uma das Sete Maravilhas do Mundo, o Cristo Redentor é um enorme monumento no topo do Corcovado, que oferece vistas espetaculares da cidade.</li>
+            <li>Maracanã, o lendário estádio de futebol que é um ícone do esporte brasileiro. Você pode fazer um tour para conhecer a história do local.</li>
+            <li id="mostrarMais1" style="display: none">Visite o Pão de Açúcar e desfrute das vistas panorâmicas</li>
+            <li id="mostrarMais2" style="display: none">Explore o bairro de Santa Teresa com suas ruas de paralelepípedo e arte de rua</li>
+            <li id="mostrarMais3" style="display: none">Saboreie a culinária local em churrascarias e experimente a feijoada brasileira</li>
+        </ul>
+        <button id="mostrarMais">Mostrar Mais</button>
+    </main>
+    <footer>
+        <p>&copy; 2023 Dicas de Viagem by Giovanni Aleixo</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $("#mostrarMais").click(function() {
+                // Exibe os elementos ocultos com os IDs "mostrarMais1", "mostrarMais2" e "mostrarMais3"
+                $("#mostrarMais1, #mostrarMais2, #mostrarMais3").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #d11010;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para a barra de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para a lista de atrações */
+main ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #d3cfcf;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}

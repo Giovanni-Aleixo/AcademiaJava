@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dicas de Viagem - Tóquio, Japão</title>
+    <link rel="stylesheet" type="text/css" href="estilos2.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dicas de Viagem - Tóquio, Japão</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="destino1.html">França</a></li>
+            <li><a href="destino2.html">Japão</li>
+            <li><a href="destino3.html">Brasil</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Atrações em Tóquio</h2>
+        <ul>
+            <li>Visite o Templo Senso-ji em Asakusa</li>
+            <li>Explore o cruzamento de Shibuya</li>
+            <li>Desfrute da culinária local em Tsukiji Market</li>
+            <li id="mostrarMais1" style="display: none">Passeie no Parque Ueno</li>
+            <li id="mostrarMais2" style="display: none">Visite o Museu Ghibli</li>
+            <li id="mostrarMais3" style="display: none">Explore o bairro de Akihabara</li>
+        </ul>
+        <button id="mostrarMais">Mostrar Mais</button>
+    </main>
+    <footer>
+        <p>&copy; 2023 Dicas de Viagem by Giovanni Aleixo</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $("#mostrarMais").click(function() {
+                // Exibe os elementos ocultos com os IDs "mostrarMais1", "mostrarMais2" e "mostrarMais3"
+                $("#mostrarMais1, #mostrarMais2, #mostrarMais3").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
+

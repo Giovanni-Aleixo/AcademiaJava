@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dicas de Viagem</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Dicas de Viagem</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="destino1.html">França</a></li>
+            <li><a href="destino2.html">Japão</li>
+            <li><a href="destino3.html">Brasil</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Destinos Populares</h2>
+        <ul>
+            <li><a href="destino1.html">Paris, França</a></li>
+            <li><a href="destino2.html">Tóquio, Japão</a></li>
+            <li><a href="destino3.html">Rio de Janeiro, Brasil</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Dicas de Viagem by Giovanni Aleixo</p>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function() {
+        // Quando o título "Destinos Populares" é clicado
+        $("main h2").click(function() {
+            // Encontre a lista de destinos populares
+            var listaDestinos = $(this).next("ul");
+            
+            // Alternar a visibilidade da lista
+            listaDestinos.slideToggle();
+        });
+    });
+    </script>
+
+</html>

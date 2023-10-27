@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tela de Login</title>
+    <link rel="stylesheet" type="text/css" href="estilos_login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Entrar</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" value="usuario">
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" value="senha">
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#loginForm").submit(function(event) {
+                event.preventDefault();
+
+                // Simulando um login bem-sucedido (usuário e senha fixos)
+                var username = $("#username").val();
+                var password = $("#password").val();
+
+                if (username === "usuario" && password === "senha") {
+                    // Exibir uma mensagem de boas-vindas em um pop-up
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Bem-vindo!',
+                        text: 'Você está logado com sucesso!',
+                    }).then(function() {
+                        // Redirecionar para a segunda página após o login bem-sucedido
+                        window.location.href = "index.html";
+                    });
+                } else {
+                    // Exibir uma mensagem de falha no login em um pop-up
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Login falhou',
+                        text: 'Usuário ou senha incorretos. Tente novamente.',
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
